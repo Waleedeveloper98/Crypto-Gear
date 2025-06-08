@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import CryptoChart from "../components/CryptoChart";
 
 const CryptoDetail = () => {
-  const { fullCoinData, setFullCoinData, currency } = useContext(cryptoContext);
+  const { fullCoinData, currency } = useContext(cryptoContext);
   const { id } = useParams();
 
   const coin = fullCoinData.find((item) => item.id === id);
